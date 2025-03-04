@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import Spinner from '../spinner'
-import SwapiService from '../../services/swapi-service'
+import SwapiService from '../../services/swapi-service';
 import ErrorIndicator from "../error-indicator";
 
 import './random-planet.css'
@@ -42,6 +42,8 @@ export default class RandomPlanet extends Component {
         while (id === 20 ) {
             id = Math.floor(Math.random()*19) + 3
         }
+         
+        
         this.swapiService
             .getPlanet(id)
             .then(this.onPlanetLoaded)
