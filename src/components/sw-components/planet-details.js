@@ -23,4 +23,4 @@ import React from 'react'
     }
 }
 
-export default withSwapiService(PlanetDetails, mapMethodsToProps)
+export default withSwapiService(mapMethodsToProps)(PlanetDetails)

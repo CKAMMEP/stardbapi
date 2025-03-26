@@ -23,4 +23,4 @@ import React from 'react'
     }
 }
 
-export default withSwapiService(PersonDetails, mapMethodsToProps)
+export default withSwapiService(mapMethodsToProps)(PersonDetails)
