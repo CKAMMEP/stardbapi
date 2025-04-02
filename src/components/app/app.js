@@ -6,7 +6,7 @@ import './app.css'
 
 import ErrorBoundary from "../error-boundary"
 import DummySwapiService from "../../services/dummy-swapi-service"
- 
+import { ErrorIndicator, NotFoundIndicator } from "../errors"
 import { SwapiServiceProvider } from '../swapi-service-context'
 import SwapiService from "../../services/swapi-service"
 import { PeoplePage, PlanetsPage, StarshipsPage, LoginPage, SecretPage } from "../pages"
@@ -59,7 +59,7 @@ render() {
                         <Route path="/secret" render={() => (
                                      <SecretPage isLoggedIn={ isLoggedIn }/>
                                  )} exact />
-                         <Route render={() => <h4>Page not found</h4>}/>
+                        <Route component={NotFoundIndicator}/>
                              </Switch>
                          </div>
                      </Router>
