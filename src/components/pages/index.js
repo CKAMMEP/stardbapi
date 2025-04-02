@@ -9,5 +9,6 @@ import PeoplePage from "./people-page"
      PlanetsPage,
      StarshipsPage,
      SecretPage,
-     LoginPage
+     LoginPage,
+     WelcomePage
  }
