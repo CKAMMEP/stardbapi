@@ -19,7 +19,7 @@ import React from "react"
                  </p>
                  <hr className="my-4" />
                  <p className="minor">
-                     © Copyright 2020. Developer - <a href="https://ythosa.github.io">Ythosa</a>.
+                     © Copyright 2025. Developer - <a href="https://github.com/CKAMMEP">Denis</a>.
                  </p>
              </div>
              <div className="intro-img">
